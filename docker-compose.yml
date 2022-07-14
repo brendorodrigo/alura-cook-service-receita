@@ -1,0 +1,27 @@
+---
+version: '3.6'
+services:
+  alura-cook-service-boilerplate:
+    build:
+      context: .
+    image: brendomatos/alura-cook-service-boilerplate:1.0
+    command: python app/server.py
+    container_name: alura_cook_boilerplate_service
+    env_file: .local_env
+    networks:
+      - alura
+    ports:
+      - "6099:6099"
+    volumes:
+      - .:/app
+  mongo:
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: alura
+      MONGO_INITDB_ROOT_PASSWORD: alura-cook
+    networks:
+      - alura
+
+networks:
+  alura:
+    external: true

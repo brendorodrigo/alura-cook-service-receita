@@ -1,0 +1,5 @@
+boto3==1.15.18
+grpcio==1.44.0
+grpcio-tools==1.44.0
+protobuf==3.20.0
+pymongo==4.1.1

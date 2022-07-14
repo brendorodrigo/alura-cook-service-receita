@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+message IsAliveRequest {
+  bool check = 1;
+}
+
+message IsAliveResponse {
+  int32 status = 1;
+}
