@@ -1,17 +1,17 @@
 ---
 version: '3.6'
 services:
-  alura-cook-service-boilerplate:
+  alura-cook-service-receita:
     build:
       context: .
     image: brendomatos/alura-cook-service-boilerplate:1.0
     command: python app/server.py
-    container_name: alura_cook_boilerplate_service
+    container_name: alura_cook_boilerplate_receita
     env_file: .local_env
     networks:
       - alura
     ports:
-      - "6099:6099"
+      - "6001:6001"
     volumes:
       - .:/app
   mongo:
