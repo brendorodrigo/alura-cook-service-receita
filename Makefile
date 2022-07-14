@@ -1,6 +1,6 @@
 GRPC_OUT_PATH=app/grpc/src
 GRPC_PROTOBUF_PATH=app/grpc/protos
-SERVICE_NAME=alura-cook-service-boilerplate
+SERVICE_NAME=alura-cook-service-receita
 
 NETWORK_NAME=alura
 NETWORK_ID=$(shell docker network ls -qf "name=${NETWORK_NAME}")

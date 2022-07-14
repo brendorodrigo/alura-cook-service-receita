@@ -1,3 +1,3 @@
-# alura-cook-service-boilerplate
-Boilerplate para criação de microserviços no projeto Alura Cook 
+# alura-cook-service-receita
+Microserviço de receita do projeto Alura Cook 
  
